@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0355DA5724EC04B100F541A9 /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5624EC04B100F541A9 /* PoseBuilderConfiguration.swift */; };
+		0355DA5924EC04D200F541A9 /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5824EC04D200F541A9 /* PoseBuilder.swift */; };
+		0355DA5B24EC04F000F541A9 /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5A24EC04F000F541A9 /* PoseBuilder+Single.swift */; };
+		0355DA5D24EC050D00F541A9 /* PoseBuilder+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5C24EC050D00F541A9 /* PoseBuilder+Multiple.swift */; };
+		0355DA5F24EC052900F541A9 /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5E24EC052900F541A9 /* Pose.swift */; };
+		0355DA6124EC054500F541A9 /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6024EC054500F541A9 /* Joint.swift */; };
+		0355DA6624EC058E00F541A9 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6524EC058E00F541A9 /* PoseNetInput.swift */; };
+		0355DA6824EC05A300F541A9 /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6724EC05A300F541A9 /* PoseNetOutput.swift */; };
+		0355DA6A24EC05B900F541A9 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6924EC05B900F541A9 /* PoseNet.swift */; };
+		0355DA6E24EC05EE00F541A9 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6D24EC05EE00F541A9 /* CGPoint+Extension.swift */; };
+		0355DA7024EC060C00F541A9 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA6F24EC060C00F541A9 /* CGImage+Extension.swift */; };
+		0355DA7324EC063600F541A9 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7224EC063600F541A9 /* VideoCapture.swift */; };
+		0355DA7524EC065000F541A9 /* AVCaptureVideoOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7424EC065000F541A9 /* AVCaptureVideoOrientation+Extension.swift */; };
+		0355DA7824EC067600F541A9 /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7724EC067600F541A9 /* PoseImageView.swift */; };
+		0355DA7A24EC069300F541A9 /* GradientOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7924EC069300F541A9 /* GradientOverlayView.swift */; };
+		0355DA7C24EC06A800F541A9 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */; };
+		0355DA7E24EC06BF00F541A9 /* PopOverModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */; };
+		0355DA8124ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		0355DA8324ECE84200F541A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0355DA8224ECE84200F541A9 /* Default-568h@2x.png */; };
+		039FCE5F24EBC28F00DE1DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */; };
+		039FCE6824EBC29300DE1DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039FCE6724EBC29300DE1DAC /* Assets.xcassets */; };
+		039FCE6B24EBC29300DE1DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */; };
+		039FCE7324EBC50600DE1DAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039FCE7224EBC50600DE1DAC /* GoogleService-Info.plist */; };
+		03A18AEA24ECF43A00899901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A18AE924ECF43A00899901 /* ViewController.swift */; };
+		03A18AED24ECFA0400899901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A18AEB24ECFA0400899901 /* Main.storyboard */; };
+		3589EC65BFA7506A5E5442C6 /* Pods_unchi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B8E6CCF30A01C867A3F88C /* Pods_unchi2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0355DA5324EBD6B900F541A9 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		0355DA5624EC04B100F541A9 /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
+		0355DA5824EC04D200F541A9 /* PoseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		0355DA5A24EC04F000F541A9 /* PoseBuilder+Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Single.swift"; sourceTree = "<group>"; };
+		0355DA5C24EC050D00F541A9 /* PoseBuilder+Multiple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Multiple.swift"; sourceTree = "<group>"; };
+		0355DA5E24EC052900F541A9 /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		0355DA6024EC054500F541A9 /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		0355DA6524EC058E00F541A9 /* PoseNetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
+		0355DA6724EC05A300F541A9 /* PoseNetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
+		0355DA6924EC05B900F541A9 /* PoseNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		0355DA6D24EC05EE00F541A9 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		0355DA6F24EC060C00F541A9 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		0355DA7224EC063600F541A9 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		0355DA7424EC065000F541A9 /* AVCaptureVideoOrientation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Extension.swift"; sourceTree = "<group>"; };
+		0355DA7724EC067600F541A9 /* PoseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
+		0355DA7924EC069300F541A9 /* GradientOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientOverlayView.swift; sourceTree = "<group>"; };
+		0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverModalViewController.swift; sourceTree = "<group>"; };
+		0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PoseNetMobileNet075S16FP16.mlmodel; path = "../../../../Downloads/DetectingHumanBodyPosesInAnImage (1)/PoseFinder/Model/PoseNetMobileNet075S16FP16.mlmodel"; sourceTree = "<group>"; };
+		0355DA8224ECE84200F541A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		039FCE5B24EBC28F00DE1DAC /* unchi2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unchi2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		039FCE6724EBC29300DE1DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		039FCE6A24EBC29300DE1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		039FCE6C24EBC29300DE1DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039FCE7224EBC50600DE1DAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03A18AE924ECF43A00899901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03A18AEC24ECFA0400899901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/DetectingHumanBodyPosesInAnImage (1)/PoseFinder/App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		56A457858C225E4CB36626B7 /* Pods-unchi2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unchi2.release.xcconfig"; path = "Target Support Files/Pods-unchi2/Pods-unchi2.release.xcconfig"; sourceTree = "<group>"; };
+		B8B8E6CCF30A01C867A3F88C /* Pods_unchi2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unchi2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DFF9067D35E066CFAE9EA8 /* Pods-unchi2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unchi2.debug.xcconfig"; path = "Target Support Files/Pods-unchi2/Pods-unchi2.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039FCE5824EBC28F00DE1DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3589EC65BFA7506A5E5442C6 /* Pods_unchi2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0355DA5524EC049900F541A9 /* pose */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA5624EC04B100F541A9 /* PoseBuilderConfiguration.swift */,
+				0355DA5824EC04D200F541A9 /* PoseBuilder.swift */,
+				0355DA5A24EC04F000F541A9 /* PoseBuilder+Single.swift */,
+				0355DA5C24EC050D00F541A9 /* PoseBuilder+Multiple.swift */,
+				0355DA5E24EC052900F541A9 /* Pose.swift */,
+				0355DA6024EC054500F541A9 /* Joint.swift */,
+			);
+			path = pose;
+			sourceTree = "<group>";
+		};
+		0355DA6224EC056A00F541A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */,
+				0355DA6524EC058E00F541A9 /* PoseNetInput.swift */,
+				0355DA6724EC05A300F541A9 /* PoseNetOutput.swift */,
+				0355DA6924EC05B900F541A9 /* PoseNet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0355DA6C24EC05D900F541A9 /* Extensions+Types */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA6D24EC05EE00F541A9 /* CGPoint+Extension.swift */,
+				0355DA6F24EC060C00F541A9 /* CGImage+Extension.swift */,
+			);
+			path = "Extensions+Types";
+			sourceTree = "<group>";
+		};
+		0355DA7124EC062000F541A9 /* Uitils */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA7224EC063600F541A9 /* VideoCapture.swift */,
+				0355DA7424EC065000F541A9 /* AVCaptureVideoOrientation+Extension.swift */,
+			);
+			path = Uitils;
+			sourceTree = "<group>";
+		};
+		0355DA7624EC066400F541A9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA7724EC067600F541A9 /* PoseImageView.swift */,
+				0355DA7924EC069300F541A9 /* GradientOverlayView.swift */,
+				0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */,
+				0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */,
+				03A18AE924ECF43A00899901 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0355DA7F24ECE7B800F541A9 /* PoseFinder */ = {
+			isa = PBXGroup;
+			children = (
+				039FCE5D24EBC28F00DE1DAC /* unchi2 */,
+				0355DA5524EC049900F541A9 /* pose */,
+				0355DA6224EC056A00F541A9 /* Model */,
+				0355DA6C24EC05D900F541A9 /* Extensions+Types */,
+				0355DA7124EC062000F541A9 /* Uitils */,
+				0355DA7624EC066400F541A9 /* UI */,
+			);
+			path = PoseFinder;
+			sourceTree = "<group>";
+		};
+		039FCE5224EBC28F00DE1DAC = {
+			isa = PBXGroup;
+			children = (
+				0355DA8224ECE84200F541A9 /* Default-568h@2x.png */,
+				0355DA7F24ECE7B800F541A9 /* PoseFinder */,
+				039FCE5C24EBC28F00DE1DAC /* Products */,
+				F4FB6A9D9CCC10C471532D80 /* Pods */,
+				9F34681C72333161E4B8F962 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		039FCE5C24EBC28F00DE1DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039FCE5B24EBC28F00DE1DAC /* unchi2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039FCE5D24EBC28F00DE1DAC /* unchi2 */ = {
+			isa = PBXGroup;
+			children = (
+				039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */,
+				039FCE7224EBC50600DE1DAC /* GoogleService-Info.plist */,
+				03A18AEB24ECFA0400899901 /* Main.storyboard */,
+				039FCE6724EBC29300DE1DAC /* Assets.xcassets */,
+				039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */,
+				039FCE6C24EBC29300DE1DAC /* Info.plist */,
+			);
+			path = unchi2;
+			sourceTree = "<group>";
+		};
+		9F34681C72333161E4B8F962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0355DA5324EBD6B900F541A9 /* CoreML.framework */,
+				B8B8E6CCF30A01C867A3F88C /* Pods_unchi2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4FB6A9D9CCC10C471532D80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6DFF9067D35E066CFAE9EA8 /* Pods-unchi2.debug.xcconfig */,
+				56A457858C225E4CB36626B7 /* Pods-unchi2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039FCE5A24EBC28F00DE1DAC /* unchi2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039FCE6F24EBC29300DE1DAC /* Build configuration list for PBXNativeTarget "unchi2" */;
+			buildPhases = (
+				EE7CB974EFD41B57C53317BB /* [CP] Check Pods Manifest.lock */,
+				039FCE5724EBC28F00DE1DAC /* Sources */,
+				039FCE5824EBC28F00DE1DAC /* Frameworks */,
+				039FCE5924EBC28F00DE1DAC /* Resources */,
+				8DC72C0C2EAA4A5CBE658445 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unchi2;
+			productName = unchi2;
+			productReference = 039FCE5B24EBC28F00DE1DAC /* unchi2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039FCE5324EBC28F00DE1DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = michael;
+				TargetAttributes = {
+					039FCE5A24EBC28F00DE1DAC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 039FCE5624EBC28F00DE1DAC /* Build configuration list for PBXProject "unchi2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 039FCE5224EBC28F00DE1DAC;
+			productRefGroup = 039FCE5C24EBC28F00DE1DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039FCE5A24EBC28F00DE1DAC /* unchi2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		039FCE5924EBC28F00DE1DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039FCE6B24EBC29300DE1DAC /* LaunchScreen.storyboard in Resources */,
+				039FCE7324EBC50600DE1DAC /* GoogleService-Info.plist in Resources */,
+				039FCE6824EBC29300DE1DAC /* Assets.xcassets in Resources */,
+				03A18AED24ECFA0400899901 /* Main.storyboard in Resources */,
+				0355DA8324ECE84200F541A9 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DC72C0C2EAA4A5CBE658445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unchi2/Pods-unchi2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unchi2/Pods-unchi2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unchi2/Pods-unchi2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7CB974EFD41B57C53317BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-unchi2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039FCE5724EBC28F00DE1DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0355DA5724EC04B100F541A9 /* PoseBuilderConfiguration.swift in Sources */,
+				0355DA7324EC063600F541A9 /* VideoCapture.swift in Sources */,
+				0355DA5F24EC052900F541A9 /* Pose.swift in Sources */,
+				0355DA6124EC054500F541A9 /* Joint.swift in Sources */,
+				0355DA7E24EC06BF00F541A9 /* PopOverModalViewController.swift in Sources */,
+				0355DA7A24EC069300F541A9 /* GradientOverlayView.swift in Sources */,
+				0355DA5924EC04D200F541A9 /* PoseBuilder.swift in Sources */,
+				0355DA7024EC060C00F541A9 /* CGImage+Extension.swift in Sources */,
+				0355DA7824EC067600F541A9 /* PoseImageView.swift in Sources */,
+				0355DA6A24EC05B900F541A9 /* PoseNet.swift in Sources */,
+				03A18AEA24ECF43A00899901 /* ViewController.swift in Sources */,
+				039FCE5F24EBC28F00DE1DAC /* AppDelegate.swift in Sources */,
+				0355DA7524EC065000F541A9 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
+				0355DA6624EC058E00F541A9 /* PoseNetInput.swift in Sources */,
+				0355DA6E24EC05EE00F541A9 /* CGPoint+Extension.swift in Sources */,
+				0355DA5D24EC050D00F541A9 /* PoseBuilder+Multiple.swift in Sources */,
+				0355DA7C24EC06A800F541A9 /* ConfigurationViewController.swift in Sources */,
+				0355DA5B24EC04F000F541A9 /* PoseBuilder+Single.swift in Sources */,
+				0355DA8124ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				0355DA6824EC05A300F541A9 /* PoseNetOutput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039FCE6A24EBC29300DE1DAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03A18AEB24ECFA0400899901 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A18AEC24ECFA0400899901 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		039FCE6D24EBC29300DE1DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		039FCE6E24EBC29300DE1DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		039FCE7024EBC29300DE1DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DFF9067D35E066CFAE9EA8 /* Pods-unchi2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89WHXVX5YU;
+				INFOPLIST_FILE = unchi2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ARKitsan.unchi2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		039FCE7124EBC29300DE1DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A457858C225E4CB36626B7 /* Pods-unchi2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89WHXVX5YU;
+				INFOPLIST_FILE = unchi2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ARKitsan.unchi2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039FCE5624EBC28F00DE1DAC /* Build configuration list for PBXProject "unchi2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039FCE6D24EBC29300DE1DAC /* Debug */,
+				039FCE6E24EBC29300DE1DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039FCE6F24EBC29300DE1DAC /* Build configuration list for PBXNativeTarget "unchi2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039FCE7024EBC29300DE1DAC /* Debug */,
+				039FCE7124EBC29300DE1DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039FCE5324EBC28F00DE1DAC /* Project object */;
+}

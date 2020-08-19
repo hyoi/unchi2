@@ -1,0 +1,6 @@
+framework module Pods_unchi2 {
+  umbrella header "Pods-unchi2-umbrella.h"
+
+  export *
+  module * { export * }
+}

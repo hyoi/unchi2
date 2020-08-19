@@ -1,0 +1,48 @@
+//
+//  PopOverModalViewController.swift
+//  unchi2
+//
+//  Created by 渡邉輝 on 2020/08/18.
+//  Copyright © 2020 michael. All rights reserved.
+//
+
+import UIKit
+
+// MARK: PopOverPresentationManager
+
+class PopOverPresentationManager: NSObject, UIViewControllerTransitioningDelegate {
+    var presentedViewController: UIViewController
+    var presentingViewController: UIViewController
+
+    init(presenting presentingViewController: UIViewController,
+         presented presentedViewController: UIViewController) {
+        self.presentingViewController = presentingViewController
+        self.presentedViewController = presentedViewController
+    }
+
+    // MARK: UIViewControllerTransitioningDelegate
+
+    func presentationController(forPresented presented: UIViewController,
+                                presenting: UIViewController?,
+                                source: UIViewController) -> UIPresentationController? {
+        let presentationController = PopOverPresentationController(presentedViewController: presented,
+                                                                   presenting: presenting)
+        return presentationController
+    }
+}
+
+// MARK: - UIPresentationController
+
+class PopOverPresentationController: UIPresentationController {
+    /// Percentage used to compute the height of the view.
+    private let popOverHeightRatio: CGFloat = 0.6
+
+    override var frameOfPresentedViewInContainerView: CGRect {
+        let viewHeight = containerView!.bounds.height * popOverHeightRatio
+        let origin = CGPoint(x: 0, y: containerView!.bounds.height - viewHeight)
+        let size = CGSize(width: containerView!.bounds.width,
+                          height: viewHeight)
+        return CGRect(origin: origin, size: size)
+    }
+}
+
