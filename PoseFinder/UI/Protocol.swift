@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol PoseImageViewDelegate {
+
+    func viewDidLoad()
+  
+
+}

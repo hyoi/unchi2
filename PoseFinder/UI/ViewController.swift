@@ -9,6 +9,8 @@
 import AVFoundation
 import UIKit
 import VideoToolbox
+import SocketIO
+
 
 class ViewController: UIViewController {
     /// The view the controller uses to visualize the detected pose
@@ -165,3 +167,6 @@ extension ViewController: PoseNetDelegate {
         previewImageView.show(poses: poses, on: currentFrame)
     }
 }
+
+
+

@@ -6,7 +6,7 @@ target 'unchi2' do
   use_frameworks!
 
   # Pods for unchi2
-pod 'Firebase/Database'
+pod 'Socket.IO-Client-Swift', '~> 15.2.0'
 
 
 end
