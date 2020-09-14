@@ -6,11 +6,17 @@
 //  Copyright © 2020 michael. All rights reserved.
 //
 
+
+
 import UIKit
 
 
 @IBDesignable
 class PoseImageView: UIImageView {
+    
+    
+    
+    
     
     /// A data structure used to describe a visual connection between two joints.
     struct JointSegment {
@@ -54,6 +60,17 @@ class PoseImageView: UIImageView {
     ///     - poses: An array of detected poses.
     ///     - frame: The image used to detect the poses and used as the background for the returned image.
     func show(poses: [Pose], on frame: CGImage) {
+       
+        
+        
+    
+       
+        
+        
+        
+        
+        
+        
         let dstImageSize = CGSize(width: frame.width, height: frame.height)
         let dstImageFormat = UIGraphicsImageRendererFormat()
 
@@ -65,14 +82,29 @@ class PoseImageView: UIImageView {
             // Draw the current frame as the background for the new image.
             draw(image: frame, in: rendererContext.cgContext)
 
-        
-            
-            
             for pose in poses {
                 // Draw the segment lines.
                 for segment in PoseImageView.jointSegments {
                     let jointA = pose[segment.jointA]
                     let jointB = pose[segment.jointB]
+
+                    
+                    let positionA = pose[segment.jointA].position
+                    let positionB = pose[segment.jointB].position
+ 
+                    
+                 let vc = ViewController()
+                    vc.hogehoge = [
+                        positionA : ViewController(positionA:Double())
+                           
+                           ]
+                   
+                    
+                    
+                    
+                    
+                    print("ポジションA　＝",positionA)
+                    print("ポジションB　＝",positionB)
 
                     guard jointA.isValid, jointB.isValid else {
                         continue
@@ -144,20 +176,10 @@ class PoseImageView: UIImageView {
 
 
 
-// MARK: - Socket.io
 
-var delegate: PoseImageViewDelegate?
-   
-   func greet() {
-       guard let delegate = delegate else {
-           // 処理を任せる相手が決まっていない場合
-           return
-       }
-       if type(of: delegate) == dappun.self {
-           // 処理を任せる相手がJohnクラスの場合
-           // 挨拶と名前をログに出力
-        delegate.viewDidLoad()
-           
-}
+var text = String()
 
-}
+func segment (_ data:String) {
+    text = data
+    
+   }

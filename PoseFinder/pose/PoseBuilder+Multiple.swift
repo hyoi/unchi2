@@ -50,7 +50,6 @@ extension PoseBuilder {
                 joint.position = joint.position.applying(modelToInputTransformation)
             }
         }
-
         return detectedPoses
     }
 

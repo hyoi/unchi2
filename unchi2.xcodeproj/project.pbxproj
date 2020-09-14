@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		034BF21924EF9B2A00D4AAF0 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 034BF21824EF9B2A00D4AAF0 /* SocketIO */; };
-		034BF21D24EFC03A00D4AAF0 /* dappundelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BF21C24EFC03A00D4AAF0 /* dappundelegate.swift */; };
-		034BF21F24EFC38800D4AAF0 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BF21E24EFC38800D4AAF0 /* Protocol.swift */; };
 		0355DA5724EC04B100F541A9 /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5624EC04B100F541A9 /* PoseBuilderConfiguration.swift */; };
 		0355DA5924EC04D200F541A9 /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5824EC04D200F541A9 /* PoseBuilder.swift */; };
 		0355DA5B24EC04F000F541A9 /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA5A24EC04F000F541A9 /* PoseBuilder+Single.swift */; };
@@ -27,19 +24,19 @@
 		0355DA7A24EC069300F541A9 /* GradientOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7924EC069300F541A9 /* GradientOverlayView.swift */; };
 		0355DA7C24EC06A800F541A9 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */; };
 		0355DA7E24EC06BF00F541A9 /* PopOverModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */; };
-		0355DA8124ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */; };
 		0355DA8324ECE84200F541A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0355DA8224ECE84200F541A9 /* Default-568h@2x.png */; };
+		036D0EB925023183004E6540 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 036D0EB825023183004E6540 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		036D0EE425035018004E6540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036D0EE225035017004E6540 /* Main.storyboard */; };
+		036D0F0A25049508004E6540 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 036D0F0925049508004E6540 /* SocketIO */; };
 		039FCE5F24EBC28F00DE1DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */; };
 		039FCE6824EBC29300DE1DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039FCE6724EBC29300DE1DAC /* Assets.xcassets */; };
 		039FCE6B24EBC29300DE1DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */; };
 		03A18AEA24ECF43A00899901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A18AE924ECF43A00899901 /* ViewController.swift */; };
-		03A18AED24ECFA0400899901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A18AEB24ECFA0400899901 /* Main.storyboard */; };
+		03F8561324F65845006E99AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8561224F65844006E99AC /* SceneDelegate.swift */; };
 		3589EC65BFA7506A5E5442C6 /* Pods_unchi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B8E6CCF30A01C867A3F88C /* Pods_unchi2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		034BF21C24EFC03A00D4AAF0 /* dappundelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dappundelegate.swift; sourceTree = "<group>"; };
-		034BF21E24EFC38800D4AAF0 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		0355DA5324EBD6B900F541A9 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		0355DA5624EC04B100F541A9 /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
 		0355DA5824EC04D200F541A9 /* PoseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
@@ -58,15 +55,16 @@
 		0355DA7924EC069300F541A9 /* GradientOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientOverlayView.swift; sourceTree = "<group>"; };
 		0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverModalViewController.swift; sourceTree = "<group>"; };
-		0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PoseNetMobileNet075S16FP16.mlmodel; path = "../../../../Downloads/DetectingHumanBodyPosesInAnImage (1)/PoseFinder/Model/PoseNetMobileNet075S16FP16.mlmodel"; sourceTree = "<group>"; };
 		0355DA8224ECE84200F541A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		036D0EB825023183004E6540 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PoseNetMobileNet075S16FP16.mlmodel; path = "../../../../../Downloads/DetectingHumanBodyPosesInAnImage (1)/PoseFinder/Model/PoseNetMobileNet075S16FP16.mlmodel"; sourceTree = "<group>"; };
+		036D0EE325035017004E6540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../ws-pose/PoseFinder/App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		039FCE5B24EBC28F00DE1DAC /* unchi2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unchi2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		039FCE6724EBC29300DE1DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039FCE6A24EBC29300DE1DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039FCE6C24EBC29300DE1DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A18AE924ECF43A00899901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03A18AEC24ECFA0400899901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/DetectingHumanBodyPosesInAnImage (1)/PoseFinder/App/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		03F8561224F65844006E99AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56A457858C225E4CB36626B7 /* Pods-unchi2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unchi2.release.xcconfig"; path = "Target Support Files/Pods-unchi2/Pods-unchi2.release.xcconfig"; sourceTree = "<group>"; };
 		B8B8E6CCF30A01C867A3F88C /* Pods_unchi2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unchi2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DFF9067D35E066CFAE9EA8 /* Pods-unchi2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unchi2.debug.xcconfig"; path = "Target Support Files/Pods-unchi2/Pods-unchi2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3589EC65BFA7506A5E5442C6 /* Pods_unchi2.framework in Frameworks */,
-				034BF21924EF9B2A00D4AAF0 /* SocketIO in Frameworks */,
+				036D0F0A25049508004E6540 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +99,7 @@
 		0355DA6224EC056A00F541A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0355DA8024ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel */,
+				036D0EB825023183004E6540 /* PoseNetMobileNet075S16FP16.mlmodel */,
 				0355DA6524EC058E00F541A9 /* PoseNetInput.swift */,
 				0355DA6724EC05A300F541A9 /* PoseNetOutput.swift */,
 				0355DA6924EC05B900F541A9 /* PoseNet.swift */,
@@ -131,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				0355DA7724EC067600F541A9 /* PoseImageView.swift */,
-				034BF21E24EFC38800D4AAF0 /* Protocol.swift */,
-				034BF21C24EFC03A00D4AAF0 /* dappundelegate.swift */,
 				0355DA7924EC069300F541A9 /* GradientOverlayView.swift */,
 				0355DA7B24EC06A800F541A9 /* ConfigurationViewController.swift */,
 				0355DA7D24EC06BF00F541A9 /* PopOverModalViewController.swift */,
@@ -178,8 +174,9 @@
 			children = (
 				039FCE6C24EBC29300DE1DAC /* Info.plist */,
 				039FCE5E24EBC28F00DE1DAC /* AppDelegate.swift */,
-				03A18AEB24ECFA0400899901 /* Main.storyboard */,
+				03F8561224F65844006E99AC /* SceneDelegate.swift */,
 				039FCE6724EBC29300DE1DAC /* Assets.xcassets */,
+				036D0EE225035017004E6540 /* Main.storyboard */,
 				039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */,
 			);
 			path = unchi2;
@@ -222,7 +219,7 @@
 			);
 			name = unchi2;
 			packageProductDependencies = (
-				034BF21824EF9B2A00D4AAF0 /* SocketIO */,
+				036D0F0925049508004E6540 /* SocketIO */,
 			);
 			productName = unchi2;
 			productReference = 039FCE5B24EBC28F00DE1DAC /* unchi2.app */;
@@ -253,7 +250,7 @@
 			);
 			mainGroup = 039FCE5224EBC28F00DE1DAC;
 			packageReferences = (
-				034BF21724EF9B2A00D4AAF0 /* XCRemoteSwiftPackageReference "socket" */,
+				036D0F0825049508004E6540 /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = 039FCE5C24EBC28F00DE1DAC /* Products */;
 			projectDirPath = "";
@@ -271,8 +268,8 @@
 			files = (
 				039FCE6B24EBC29300DE1DAC /* LaunchScreen.storyboard in Resources */,
 				039FCE6824EBC29300DE1DAC /* Assets.xcassets in Resources */,
-				03A18AED24ECFA0400899901 /* Main.storyboard in Resources */,
 				0355DA8324ECE84200F541A9 /* Default-568h@2x.png in Resources */,
+				036D0EE425035018004E6540 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +329,8 @@
 				0355DA7E24EC06BF00F541A9 /* PopOverModalViewController.swift in Sources */,
 				0355DA7A24EC069300F541A9 /* GradientOverlayView.swift in Sources */,
 				0355DA5924EC04D200F541A9 /* PoseBuilder.swift in Sources */,
+				03F8561324F65845006E99AC /* SceneDelegate.swift in Sources */,
 				0355DA7024EC060C00F541A9 /* CGImage+Extension.swift in Sources */,
-				034BF21D24EFC03A00D4AAF0 /* dappundelegate.swift in Sources */,
 				0355DA7824EC067600F541A9 /* PoseImageView.swift in Sources */,
 				0355DA6A24EC05B900F541A9 /* PoseNet.swift in Sources */,
 				03A18AEA24ECF43A00899901 /* ViewController.swift in Sources */,
@@ -342,10 +339,9 @@
 				0355DA6624EC058E00F541A9 /* PoseNetInput.swift in Sources */,
 				0355DA6E24EC05EE00F541A9 /* CGPoint+Extension.swift in Sources */,
 				0355DA5D24EC050D00F541A9 /* PoseBuilder+Multiple.swift in Sources */,
-				034BF21F24EFC38800D4AAF0 /* Protocol.swift in Sources */,
 				0355DA7C24EC06A800F541A9 /* ConfigurationViewController.swift in Sources */,
 				0355DA5B24EC04F000F541A9 /* PoseBuilder+Single.swift in Sources */,
-				0355DA8124ECE82500F541A9 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				036D0EB925023183004E6540 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
 				0355DA6824EC05A300F541A9 /* PoseNetOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,20 +349,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		036D0EE225035017004E6540 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036D0EE325035017004E6540 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		039FCE6924EBC29300DE1DAC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				039FCE6A24EBC29300DE1DAC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		03A18AEB24ECFA0400899901 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03A18AEC24ECFA0400899901 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -548,7 +544,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		034BF21724EF9B2A00D4AAF0 /* XCRemoteSwiftPackageReference "socket" */ = {
+		036D0F0825049508004E6540 /* XCRemoteSwiftPackageReference "socket" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
 			requirement = {
@@ -559,9 +555,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		034BF21824EF9B2A00D4AAF0 /* SocketIO */ = {
+		036D0F0925049508004E6540 /* SocketIO */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 034BF21724EF9B2A00D4AAF0 /* XCRemoteSwiftPackageReference "socket" */;
+			package = 036D0F0825049508004E6540 /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
 		};
 /* End XCSwiftPackageProductDependency section */

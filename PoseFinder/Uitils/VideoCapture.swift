@@ -125,6 +125,8 @@ class VideoCapture: NSObject {
 
         guard captureSession.canAddInput(videoInput) else {
             throw VideoCaptureError.invalidInput
+            
+            
         }
 
         captureSession.addInput(videoInput)

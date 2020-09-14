@@ -31,8 +31,28 @@ class ViewController: UIViewController {
 
     private var popOverPresentationManager: PopOverPresentationManager?
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //socket.ioでローカルホストに接続及び、実装
+        var manager: SocketManager!
+        var socket: SocketIOClient!
+        manager = SocketManager(socketURL: URL(string: "http://localhost:8000")!, config: [.log(true), .forceWebsockets(true), .forcePolling(true)])
+        socket = manager.defaultSocket
+        socket.connect()
+        
+        
+        
 
         // For convenience, the idle timer is disabled to prevent the screen from locking.
         UIApplication.shared.isIdleTimerDisabled = true
@@ -73,7 +93,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onCameraButtonTapped(_ sender: Any) {
-        videoCapture.flipCamera { error in
+      videoCapture.flipCamera { error in
             if let error = error {
                 print("Failed to flip camera with error \(error)")
             }
@@ -88,7 +108,32 @@ class ViewController: UIViewController {
 
         algorithm = selectedAlgorithm
     }
-}
+    @IBOutlet var label: UIView!
+
+       var flag: Bool = false
+    
+    
+   class hogehoge{
+    var positionA = [Double].self
+    
+    }
+    
+    
+    
+    @IBAction func swichon(_ sender: Any) {
+        if flag == false {
+        
+            let vc2 = ViewController()
+            vc2.michael(word: String())
+            
+            //ONにする時に走らせたい処理
+            flag = true
+        } else if flag == true {
+            //OFFにする時に走らせたい処理
+            flag = false
+        }
+        }}
+
 
 // MARK: - Navigation
 
@@ -166,7 +211,15 @@ extension ViewController: PoseNetDelegate {
 
         previewImageView.show(poses: poses, on: currentFrame)
     }
+
+
+
+
+
+
+// MARK: - Switch
+
+
+ 
+ 
 }
-
-
-

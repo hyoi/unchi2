@@ -11,6 +11,9 @@ import UIKit
 @IBDesignable
 class GradientOverlayView: UIView {
 
+    
+    
+    
     @IBInspectable var startColor: UIColor = UIColor.black
     @IBInspectable var endColor: UIColor = UIColor.clear
 
